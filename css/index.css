@@ -1,0 +1,563 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  background: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+}
+@media screen and (min-width: 500px) {
+  .top {
+    overflow: hidden;
+    position: fixed;
+    opacity: 0.9;
+    filter: opacity(50);
+    top: 0;
+    width: 100%;
+  }
+}
+.top h1 {
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .top h1 {
+    font-size: 3rem;
+  }
+}
+.top nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.top nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-right: 1%;
+  color: #454A59;
+}
+@media (max-width: 500px) {
+  .top nav a {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  .top nav a:last-child {
+    margin-right: none;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .home {
+    margin-top: 105px;
+  }
+}
+.home .intro img {
+  border-radius: 10px;
+  width: 100%;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    justify-content: center;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 11px;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 35%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn a {
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.5rem;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@keyframes ani1 {
+  from {
+    border: 0.5px solid #22283A;
+  }
+  to {
+    border: none;
+  }
+}
+.home .walk .walk-text .btn:hover:hover {
+  animation-name: ani1;
+  animation-duration: 0.5s;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 500px) {
+  form {
+    margin-top: 115px;
+  }
+}
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+}
+form img {
+  border-radius: 10px;
+  width: 100%;
+}
+form .content-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .content-form h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+form .content-form p {
+  text-align: center;
+}
+form .content-form label {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+form .content-form input[type=text],
+form .content-form input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+@media (max-width: 500px) {
+  form .content-form input[type=text],
+  form .content-form input[type=password] {
+    width: 100%;
+  }
+}
+form .content-form .signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .content-form .signin .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 100px;
+  height: 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+}
+@media (max-width: 500px) {
+  form .content-form .signin .btn {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.5rem;
+  }
+}
+form .content-form .signin .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@keyframes ani1 {
+  from {
+    border: 0.5px solid #22283A;
+  }
+  to {
+    border: none;
+  }
+}
+form .content-form .signin .btn:hover:hover {
+  animation-name: ani1;
+  animation-duration: 0.5s;
+}
+form .content-form input[type=text]:focus,
+form .content-form input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+form .content-form .member {
+  color: #5E6164;
+}
+form .content-form .clearfix {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  form .content-form .clearfix {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+form .content-form .clearfix .cancel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+  margin-right: 10px;
+}
+form .content-form .clearfix .cancel-btn a {
+  color: #F6F7F8;
+}
+form .content-form .clearfix .cancel-btn:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  form .content-form .clearfix .cancel-btn {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.5rem;
+  }
+}
+form .content-form .clearfix .cancel-btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@keyframes ani1 {
+  from {
+    border: 0.5px solid #22283A;
+  }
+  to {
+    border: none;
+  }
+}
+form .content-form .clearfix .cancel-btn:hover:hover {
+  animation-name: ani1;
+  animation-duration: 0.5s;
+}
+@media (max-width: 500px) {
+  form .content-form .clearfix .cancel-btn {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+form .content-form .clearfix .signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+}
+form .content-form .clearfix .signup-btn a {
+  color: #F6F7F8;
+}
+form .content-form .clearfix .signup-btn:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  form .content-form .clearfix .signup-btn {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.5rem;
+  }
+}
+form .content-form .clearfix .signup-btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@keyframes ani1 {
+  from {
+    border: 0.5px solid #22283A;
+  }
+  to {
+    border: none;
+  }
+}
+form .content-form .clearfix .signup-btn:hover:hover {
+  animation-name: ani1;
+  animation-duration: 0.5s;
+}
+form .content-form .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

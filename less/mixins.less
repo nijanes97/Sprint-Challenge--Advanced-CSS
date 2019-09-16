@@ -1,1 +1,37 @@
 // Mixins Here
+
+.custom-btn(@width, @height, @ft-size, @color, @bgcolor){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bgcolor;
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    font-size: @ft-size;
+    border-radius: 10px;
+    color:@color;
+
+    @media @phone{
+        width: 100%;
+        border-radius: 3px;
+        font-size: 1.5rem;
+    }
+
+    &:hover{
+        background-color:@color;
+        color:@bgcolor;
+        .btn-ani();
+    }
+}
+
+.btn-ani(){
+    @keyframes ani1{
+        from{border: .5px solid @bgcolor;}
+        to{border: none;}
+    }
+    &:hover{
+        animation-name: ani1;
+        animation-duration: .5s;
+    }
+}
